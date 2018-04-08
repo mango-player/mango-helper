@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title> mango-helper 测试</title>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		video{
+			background: #000000;
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<video id="player" controls="controls" width="500" height="300"  autoplay></video>
+	</section>
+</body>
+<script src="/assets/index.js"></script>
+<script>
+	var Helper = window.mangoHelper
+	var Log = Helper.Log
+
+	console.log(mangoHelper.UAParser());
+	
+	Log.debug('[helper]', 'test debug log output')
+</script>
+</html>

@@ -1,9 +1,19 @@
 // @flow
-export * from 'toxic-utils';
-export * from 'toxic-predicate-functions';
-export * from './utils';
-export * from './events';
-export * from './dom';
+import * as ToxicUtils from 'toxic-utils';
+import * as Predicate from 'toxic-predicate-functions';
+import * as Util from './utils';
+import * as Events from './events';
+import * as Dom from './dom';
+
 import Log from './log';
 import UAParser from 'ua-parser-js';
-export { Log, UAParser };
+
+export default { 
+    ...ToxicUtils, 
+    ...Predicate, 
+    ...Util, 
+    ...Events, 
+    ...Dom,
+    Log,
+    UAParser
+};
