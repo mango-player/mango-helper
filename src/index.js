@@ -4,6 +4,7 @@ import * as Predicate from 'toxic-predicate-functions';
 import * as Util from './utils';
 import * as Events from './events';
 import * as Dom from './dom';
+import * as fetchJsonp from 'fetch-jsonp';
 
 import Log from './log';
 import UAParser from 'ua-parser-js';
@@ -15,5 +16,6 @@ export default {
     ...Events, 
     ...Dom,
     Log,
-    UAParser
+    UAParser,
+    fetchJsonp
 };
