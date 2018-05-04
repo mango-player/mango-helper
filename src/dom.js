@@ -402,6 +402,26 @@ export class NodeWrap {
   }
 
   /**
+   * DOM集合隐藏操作
+   * @return {this}
+   */
+  hide() {
+    return this.each(el => {
+      el.style['display'] = 'none';
+    });
+  }
+
+  /**
+   * DOM集合隐藏操作
+   * @return {this}
+   */
+  show() {
+    return this.each(el => {
+      el.style['display'] = 'block';
+    });
+  }
+
+  /**
    * DOM集合HTML内容读写操作
    * @param {String} html html内容（如果有设置该参数则执行写操作，否则执行读操作）
    * @return {this}
